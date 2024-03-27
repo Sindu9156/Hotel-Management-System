@@ -1,0 +1,34 @@
+ {% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About Page</title>
+        <style>
+            h1{
+                color:rgb(139, 1, 139);
+            }
+            p{
+               text-align: left;
+               color:rgb(70, 40, 4);
+               font-size: 20px;
+            }
+            img{
+               margin-left: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>About Us</h1>
+        <div>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A hotel or a guest-house is a large building with many rooms, where people can sleep when they are not at home. A motel is a hotel especially for motorists - people who drive cars - where the room door usually opens into the parking lot rather than to an interior corridor. Inn is sometimes used to mean a smaller hotel. Guest house can also mean an accessory dwelling unit. An extended stay hotel is one where suites are rented by the week.
+
+                These places will rent a room for any number of days. They offer rooms to sleep as their business. There are also hotels where conferences are held.
+                
+                
+                Room for suite - Paris Opera Cadet Hotel
+                Some hotels have swimming pool. Some hotels are called capsule hotels (in Japan).</p>
+        </div>
+        <img src="{% static 'hotel-about.jpg' %}" width="50%" height="60%">
+    </body>
+</html>

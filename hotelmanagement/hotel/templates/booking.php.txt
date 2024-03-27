@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head><title>
+        Booking Page
+    </title><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+    <style>
+         h1{
+            color:rgb(139, 1, 139);
+            }
+            label{
+                color:rgb(216, 124, 11);
+            }
+            button{
+                background-color:rgb(216, 124, 11);
+            }
+            body{
+                margin-left: 10%;
+            }
+            
+    </style>
+    <body>
+        <h1>For Booking</h1>
+        <form>
+            <label style="padding-right:60px;">Name</label>
+            <input type="text" id="name"><br><br>
+            <label style="padding-right:39px;">Phone no</label>
+            <input type="text" id="number"><br><br>
+            <label style="padding-right:2px;">Choose Rooms</label>
+            <select>
+                <option>
+                    single room
+                </option>
+                <option>
+                    double room
+                </option>
+                <option>
+                    triple room
+                </option>
+                <option>
+                    quad room
+                </option>
+            </select><br><br>
+            <label style="padding-right:49px;">Address</label>
+            <textarea id="address"></textarea><br><br>
+            <button style="margin-left:60px;">Pay</button>
+
+        </form>
+        <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+
+$conn = mysqli_connect($servername, $username, $password);
+
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+?>
+    </body>
+</html>

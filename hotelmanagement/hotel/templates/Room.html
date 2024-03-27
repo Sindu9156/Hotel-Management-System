@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Room Info page</title>
+        <style>
+            h1{
+                color:rgb(139, 1, 139);
+            }
+            p{
+                color:rgb(70, 40, 4);
+                font-size:20px;
+            }
+            h2{
+                color:rgb(216, 124, 11);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Rooms Available in Our Hotel</h1>
+        <div>
+        <h2>Single Room</h2>
+        <p> &nbsp;&nbsp;These rooms are assigned to one person or a couple. It may have one or more beds</p>
+        <img src="{% static 'single.avif' %}" width="60%" height="60%">
+        </div>
+        <div>
+            <h2>Double Room</h2>
+            <p> &nbsp;&nbsp;Double rooms are assigned to two people; expect one double bed, or two twin beds </p>
+            <img src="{% static 'double.png' %}"  width="60%" height="60%">
+            </div>
+            <div>
+                <h2>Triple Room</h2>
+                <p> &nbsp;&nbsp;As the name might suggest, this room is equipped for three people to stay. The room will have a combination of either three twin beds, one double bed and a twin, or two double beds.</p>
+                <img src="{% static 'triple.webp' %}" width="60%" height="60%">
+                </div>
+                <div>
+                    <h2>Quad Room</h2>
+                    <p> &nbsp;&nbsp;A quad room is set up for four people to stay comfortably. This means the room will have two double beds. Some, however, may be set up dormitory-style with bunks or twins, so check with the property to make sure.</p>
+                    <img src="{% static 'quad.jpg' %}"  width="60%" height="60%">
+                    </div>
+    </body>
+</html>
